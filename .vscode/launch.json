@@ -8,6 +8,16 @@
             "program": "${workspaceRoot}/target/debug/gitui",
             "args": [],
             "cwd": "${workspaceRoot}",
+        },
+        {
+            "name": "(Linux) Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/gitui",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "console": "externalTerminal",
+            "preLaunchTask": "build:gitui"
         }
     ]
 }
